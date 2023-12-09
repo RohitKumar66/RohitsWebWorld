@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0b0a0c;
+            color: white;
+            /* overflow: hidden; */
+            font-family: 'Poppins', sans-serif;;
+        }
+
+        main {
+            margin: 0 10vh;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            /* padding: 0px 8%; */
+        }
+
+        .container h2 {
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 60px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .container h2::after {
+            content: '';
+            background: #8c001a;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        ol {
+            counter-reset: li;
+            list-style: none;
+            padding: 0 120px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.344);
+        }
+
+        ol a {
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em 2em;
+            margin: .5em 0;
+            background: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            border-radius: .3em;
+            transition: .3s ease-out;
+        }
+
+        ol a:hover {
+            background: #d8d8d8;
+        }
+
+        ol a:hover:before {
+            transform: rotate(360deg);
+        }
+
+        ol a:before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            left: -1.3em;
+            top: 50%;
+            margin-top: -1.3em;
+            background: #8c001a;
+            height: 2em;
+            width: 2em;
+            line-height: 2em;
+            border: .3em solid #fff;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 2em;
+            transition: all .3s ease-out;
+            color: white;
+        }
+
+        @media screen and (max-width: 750px) {
+            ol {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>My Projects</h2>
+            <ol>
+                <li class=""><a href="index.html">This Site</a></li>
+                <li class=""><a href="https://rohitswebportfolio.netlify.app">Portfolio Website</a></li>
+                <li class=""><a href="#">Not Available</a></li>
+                <li class=""><a href="#">Not Available</a></li>
+                <li class=""><a href="#">Not Available</a></li>
+                <li class=""><a href="#">Not Available</a></li>
+                <li class=""><a href="#">Not Available</a></li>
+                <li class=""><a href="#">Not Available</a></li>
+                <li class=""><a href="#">Not Available</a></li>
+                <li class=""><a href="#">Not Available</a></li>
+                
+            </ol>
+        </div>
+    </main>
+</body>
+
+</html>
