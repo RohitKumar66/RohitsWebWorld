@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohits Web World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: auto;
+            background: linear-gradient(to right, #4c0812 35%, #0b0a0c 35%);
+            font-family: 'Poppins', sans-serif;
+            /* overflow-x: hidden; */
+            /* zoom: 100%; */
+        }
+
+        nav {
+            height: 89px;
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+        }
+
+        .left {
+            color: red;
+            font-size: 1.7rem;
+            padding: 4px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 12.5px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.06rem;
+            color: red;
+        }
+
+        main {
+            padding: 10vh 9vw;
+        }
+
+        section {
+            /* background-color: pink; */
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: 10vh 14vw; */
+        }
+
+        section div {
+            width: 49%;
+        }
+
+        .card {
+            background-color: #8c001a;
+            width: 329px;
+            height: auto;
+            border-radius: 7px;
+            color: white;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            /* margin: 0px 48px; */
+        }
+
+        .image {
+            border-radius: 7px;
+            padding: 63px 60px 30px 63px;
+
+        }
+
+        .image img {
+            height: 185px;
+            width: auto;
+            border: 5px solid rgb(245, 242, 242);
+            border-radius: 100px;
+        }
+
+        div h4 {
+            text-align: center;
+            color: rgb(129, 126, 126);
+        }
+
+        div>hr {
+            border: 0;
+            background: black;
+            height: 1.2px;
+            margin: 60px 24px 0px;
+        }
+
+        .socials {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 1rem 0;
+        }
+
+        .socials li {
+            margin: 0 5px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: #fff;
+            /* border: 1px solid white; */
+            padding: 1px;
+            /* border-radius: 99%; */
+        }
+
+        .socials a i {
+            font-size: 14px;
+            width: 20px;
+            transition: color .4s ease;
+        }
+
+        .socials a:hover i {
+            color: aqua;
+        }
+
+        .rightSection h1 {
+            font-size: 4.5rem;
+            color: white;
+        }
+
+        .rightSection h3 {
+            color: white;
+        }
+
+        .intro {
+            width: 339px;
+        }
+
+        .leftSection {
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons {
+            padding: 17px 0px;
+            width: 200px;
+        }
+
+        .btn {
+            background: rgba(128, 6, 6, 0);
+            color: white;
+            border: 2px solid white;
+            border-radius: 22px;
+            font-size: 13px;
+            padding: 7.5px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background: rgba(128, 128, 128, 0.289);
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .rightSection p {
+            color: rgb(169, 164, 164);
+            /* width: 20vw; */
+            font-size: 12px;
+        }
+
+        footer {
+            /* background: #111; */
+            /* height: auto; */
+            width: auto;
+            padding-top: 4px;
+            /* background-color: black; */
+            bottom: 0;
+            position: relative;
+
+            height: 89px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 7px 0;
+            font-size: 11px;
+
+            color: rgba(138, 133, 133, 0.753);
+            font-size: 13px;
+            padding: 4px;
+
+
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        footer ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer ul li {
+            list-style: none;
+            margin: 12.5px;
+            color: rgba(138, 133, 133, 0.753);
+            font-size: 13px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: rgba(138, 133, 133, 0.753);
+
+        }
+
+        footer ul li a:hover {
+            font-size: 13px;
+            color: rgba(193, 188, 188, 0.701);
+        }
+
+
+
+        @media screen and (max-width: 1200px) {
+            nav {
+                flex-direction: column;
+            }
+
+
+            section {
+                /* flex-direction: column-reverse; */
+                flex-direction: column;
+                /* display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 10vh 3vw; */
+            }
+
+            .rightSection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 3vh 0;
+                text-align: center;
+            }
+
+
+            .shortcut {
+                display: inline-table;
+            }
+
+            body {
+                /* min-width: fit-content; */
+                background: linear-gradient(to bottom, #4c0812 35%, #0b0a0c 35%);
+            }
+
+            footer {
+                flex-direction: column-reverse;
+                min-width: fit-content;
+                /* padding-bottom: 20px; */
+            }
+
+        }
+
+        @media screen and (max-width: 750px) {
+            nav ul li {
+                /* list-style: none; */
+                margin: 8.5px;
+                font-size: 13px;
+            }
+
+            footer {
+                padding-bottom: 20px;
+            }
+
+            .footer-content ul {
+                flex-direction: column;
+            }
+
+            footer .footer-rights {
+                font-size: 11px;
+            }
+
+            footer ul li {
+                margin: 0.5px;
+                font-size: 11px;
+
+            }
+
+            footer ul li a:hover {
+                font-size: 11.5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">𐍂ohits𝙒eb𝙒orld</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="about.html">About</a></li> -->
+                    <li><a href="https://rohitswebportfolio.netlify.app">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="leftSection">
+                <div class="card">
+                    <div class="image"><img src="profile.png" alt="ProfilePic"></div>
+                    <h1>Rohit Kumar</h1>
+                    <h4>WEB DEVELOPER</h4>
+                    <hr>
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/profile.php?id=100070604090729"><i
+                                    class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/RohitKu16488023"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/secure_sprint_/?hl=en"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a href="/"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/rohit-kumar-pandit-0b6b20252/"><i
+                                    class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightSection">
+                <div class="intro">
+                    <h1>Hello</h1>
+                    <h3>Here's who I am & what I do.</h3>
+                    <div class="shortcut">
+                        <div class="buttons">
+                            <button class="btn">
+                                <a href="https://github.com/RohitKumar66">Visit Github</a>
+                            </button>
+                            <button class="btn">
+                                <a href="projects.html">My Projects</a>
+                            </button>
+                        </div>
+                    </div>
+                    <p>I am Rohit Kumar, a passionate web developer
+                        specializing in HTML, CSS, and JavaScript. With a keen eye for design and a
+                        commitment to clean code, I transform concepts into visually stunning and user-friendly
+                        websites. Dive in to explore a collection of projects that highlight my expertise in HTML, CSS,
+                        and
+                        JavaScript.</p>
+                    <p><br>Each entry is a testament to my commitment to clean code, seamless user experiences,
+                        and innovative design. Whether it's building responsive websites or
+                        optimizing existing code, I bring a blend of technical proficiency and a keen eye
+                        for detail to every endeavor</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-rights">
+            Copyright © www.rohitswebworld.net | All rights reserved
+        </div>
+
+        <div class="footer-content">
+            <ul>
+                <li>Contact: kumar09rohitkumar@gmail.com</li>
+                <li>🗔 Portfolio: <a href="https://rohitswebportfolio.netlify.app">rohitswebportfolio.netlify.app</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+    
+</body>
+
+</html>
